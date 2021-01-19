@@ -1,2 +1,61 @@
-.App 
-  width: 100%
+@import "./normalize.css"
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap')
+@mixin flex($ai, $jc)
+    display: flex
+    align-items: $ai
+    justify-content: $jc
+@mixin text-settings($fsize, $fweight, $color)
+    font-size: $fsize
+    font-weight: $fweight
+    color: $color
+    font-family: 'Roboto', sans-serif
+@mixin bg
+    background-position: center
+    background-repeat: no-repeat
+@mixin btn($color)
+    height: 38px
+    width: 136px
+    background: $color
+    border-radius: 5px
+html
+    box-sizing: border-box 
+*, *:before, *:after
+    box-sizing: inherit
+body 
+    overflow-x: hidden
+    font-style: normal
+    background: #E5E5E5
+.wrapper 
+    margin: 0
+    width: 1920px
+    min-height: 500px
+    @include flex(center, initial)
+    flex-direction: column
+    background:#242B33
+    @media screen and (max-width: 1919px)
+        width: 100%
+.wrapper a
+    text-decoration: none
+    text-transform: none
+    border: none
+    outline: none
+.wrapper a:focus
+    text-decoration: none
+    text-transform: none
+    border: none
+    outline: none
+.inline-wrapper
+    width: 1110px
+    @media screen and (max-width: 1109px)
+        width: 100%
+header, main, footer, section
+    width: 100%
+main, section, footer
+    min-height: 400px
+.col-w10
+    width: 10%
+.col-w20
+    width: 20%
+.col-w50
+    width: 50%
+@import '../header/header.sass';

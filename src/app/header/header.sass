@@ -1,0 +1,19 @@
+header
+    min-height: 840px
+    background-image: url(../style/images/Rectangle.png)
+    @include flex(initial, center)
+    @include bg 
+.inline-header
+    min-height: 100px
+    @include flex(center, space-between)
+.logo
+    min-height: 100px
+    @include flex(center, center)
+    flex-direction: column
+.logo p 
+    @include text-settings(12px, 400, white)
+.navigation-container
+    @include flex(center, space-between)
+.navigation-container a 
+    @include text-settings(14px, 400, white)
+    @include flex(initial, center)
