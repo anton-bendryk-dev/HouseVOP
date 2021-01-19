@@ -11,9 +11,43 @@ header
     @include flex(center, center)
     flex-direction: column
 .logo p 
-    @include text-settings(12px, 400, white)
+    @include text-settings(12px, 400, white, $rob)
 .navigation-container
     @include flex(center, space-between)
 .navigation-container a 
-    @include text-settings(14px, 400, white)
+    @include text-settings(14px, 400, white, $rob)
     @include flex(initial, center)
+header h1 
+    max-width: 556px
+    @include text-settings(48px, 700, $yellow, $pd)
+    text-align: center
+    line-height: 64px
+.title-container
+    min-height: 600px
+    @include flex(center, center)
+    flex-direction: column
+.mouse
+    display: block
+    width: 40px
+    height: 40px
+    background-image: url(../style/images/mouse.png)
+    @include bg 
+    cursor: pointer
+.contacts-container
+    @include flex(center, space-around)
+    margin-top: 50px
+.contacts-container span
+    display: block
+    width: 21px
+    height: 21px
+    @include bg 
+    margin-right: 10px
+.phone span
+    background-image: url(../style/images/Vector.png)
+.address span
+    background-image: url(../style/images/Group.png)
+.phone, .address
+    @include text-settings(18px, 400, white, $rale)
+    @include flex(center, center)
+    width: 30%
+    cursor: pointer
