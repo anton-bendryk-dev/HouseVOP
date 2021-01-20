@@ -24,6 +24,13 @@ $rale: 'Raleway', sans-serif
     width: 136px
     background: $color
     border-radius: 5px
+@mixin part-num 
+    position: absolute
+    width: 300px
+    height: 410px
+    @include flex(center, center)
+    @include text-settings(400px, 700, white, $pd)
+    opacity: 0.02
 html
     box-sizing: border-box 
 *, *:before, *:after
@@ -43,6 +50,8 @@ body
     text-transform: none
     border: none
     outline: none
+.wrapper h2 
+    @include text-settings(36px, 700, $yellow, $pd)
 .wrapper a:focus
     text-decoration: none
     text-transform: none

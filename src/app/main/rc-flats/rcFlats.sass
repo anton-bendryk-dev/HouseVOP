@@ -1,0 +1,18 @@
+.number-container2
+    @include part-num 
+    left: 200px
+.flats-container
+    display: grid 
+    grid-template-columns: 50% 50% 
+    grid-template-rows: repeat(2, 1fr)
+    justify-content: space-around
+    margin-top: 100px
+.flat-box img 
+    width: 100%
+.flat-box
+    padding: 5px
+.flat-box h4
+    @include text-settings(24px, 400, white, $rale)
+    position: relative
+    bottom: 100px
+    left: 50px

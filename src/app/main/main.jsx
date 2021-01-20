@@ -1,6 +1,6 @@
 import React from 'react';
 import ResidentialComplexDescription from './rc-description/rc';
-
+import ResidentialComplexFlats from './rc-flats/rcFlats.jsx';
 const Main = () => {
     return(
         <main>
@@ -8,7 +8,7 @@ const Main = () => {
                 <ResidentialComplexDescription/>
             </section>
             <section>
-                <div className="rc-flats-container"></div>
+                <ResidentialComplexFlats/>
             </section>
             <section>
                 <div className="feedback-container"></div>

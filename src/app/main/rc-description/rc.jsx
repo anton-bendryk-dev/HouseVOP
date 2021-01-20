@@ -4,7 +4,7 @@ import React from 'react';
 const ResidentialComplexDescription = () => {
     return(
         <div>
-            <span className='number-container'>II</span>
+            <span className='number-container1'>II</span>
             <div className="inline-wrapper rc-description-container">
                 <div className="rc-description">
                     <div className="rc-description-item">
