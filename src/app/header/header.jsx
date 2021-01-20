@@ -1,6 +1,7 @@
 import React from 'react';
 import Logo from '../style/images/HouseVOP.png';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { Link, animateScroll as scroll } from "react-scroll";
 const Header = () => {
     return(
         <header>
@@ -11,11 +12,41 @@ const Header = () => {
                         <p>ЖИЛОЙ КОМПЛЕКС</p>
                     </a></div>
                     <div className="col-w50 navigation-container">
-                        <div className="col-w20"><a href="/">О комплексе</a></div>
-                        <div className="col-w20"><a href="/">Район</a></div>
-                        <div className="col-w20"><a href="/">Каталог квартир</a></div>
-                        <div className="col-w20"><a href="/">Ипотека</a></div>
-                        <div className="col-w20"><a href="/">Контакты</a></div>
+                        <div className="col-w20">
+                        <Link activeClass="active"
+                                to="section1"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={800}>О комплексе</Link></div>
+                                <div className="col-w20">
+                        <Link activeClass="active"
+                                to="section1"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={800}>Район</Link></div>
+                                <div className="col-w20">
+                        <Link activeClass="active"
+                                to="section2"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={800}>Каталог квартир</Link></div>
+                                <div className="col-w20">
+                        <Link activeClass="active"
+                                to="section1"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={800}>Ипотека</Link></div>
+                            <div className="col-w20">
+                        <Link activeClass="active"
+                                to="section1"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={800}>Контакты</Link></div>
                     </div>
                 </div>
                 <div className="title-container">

@@ -3,7 +3,7 @@ import React from 'react';
 
 const ResidentialComplexDescription = () => {
     return(
-        <div>
+        <div id="section1">
             <span className='number-container1'>II</span>
             <div className="inline-wrapper rc-description-container">
                 <div className="rc-description">

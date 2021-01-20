@@ -3,7 +3,7 @@ import flat1 from '../../style/images/flat1.png';
 import flat2 from '../../style/images/flat2.png';
 const ResidentialComplexFlats = () => {
     return(
-        <div>
+        <div id="section2">
             <span className='number-container2'>III</span>
             <div className="inline-wrapper rc-flats-container">
                 <div className="content-section">
