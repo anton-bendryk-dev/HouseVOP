@@ -1,8 +1,28 @@
 import React from 'react';
+import ResidentialComplexDescription from './rc-description/rc';
 
 const Main = () => {
     return(
-        <main></main>
+        <main>
+            <section>
+                <ResidentialComplexDescription/>
+            </section>
+            <section>
+                <div className="rc-flats-container"></div>
+            </section>
+            <section>
+                <div className="feedback-container"></div>
+            </section>
+            <section>
+                <div className="video-player-container"></div>
+            </section>
+            <section>
+                <div className="map-container"></div>
+            </section>
+            <section>
+                <div className="feedback-container"></div>
+            </section>
+        </main>
     )
 }
 

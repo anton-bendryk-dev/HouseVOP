@@ -1,0 +1,36 @@
+.number-container
+    position: absolute
+    width: 300px
+    height: 410px
+    right: 200px
+    @include flex(center, center)
+    @include text-settings(400px, 700, white, $pd)
+    opacity: 0.02
+.rc-description-container
+    @include flex(center, center)
+.rc-description
+    min-height: 300px
+    @include flex(center, space-between)
+.rc-description-item
+    display: block
+    width: 200px
+    height: 200px
+    @include flex(center, space-initial)
+    flex-direction: column
+.rc-description span
+    display: block
+    width: 80px
+    height: 80px
+    @include bg 
+.rc-description h3 
+    text-align: center
+    @include text-settings(20px, 300, white, $rob)
+    line-height: 27px
+.rc-description-item1
+    background-image: url(../../style/images/garden.png)
+.rc-description-item2
+    background-image: url(../../style/images/build.png)
+.rc-description-item3
+    background-image: url(../../style/images/fontain.png)
+.rc-description-item4
+    background-image: url(../../style/images/bike.png)
