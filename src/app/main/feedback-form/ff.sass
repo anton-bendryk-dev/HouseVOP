@@ -1,0 +1,44 @@
+.fb-box
+    width: 100%
+    min-height: 80px
+    padding: 10px
+    @include flex(center, center)
+.fb-box p 
+    @include text-settings(13px, 400, white, $rale)
+    text-align: center
+.fb-text input
+    background-color: transparent
+    border: none
+    width: 100%
+    height: 100%
+    @include text-settings(14px, 400, #BEBEBE, $rale)
+    text-align: center
+.fb-text input:active
+    text-decoration: none
+    text-transform: none
+    border: none
+    outline: none
+    padding: 0px
+.fb-text input:focus
+    text-decoration: none
+    text-transform: none
+    border: none
+    outline: none
+    padding: 0px
+.fb-text
+    width: 255px
+    height: 50px
+    background: #FFFFFF
+    opacity: 0.2
+    padding: 10px
+.fb-btn a
+    width: 100%
+    height: 50px
+    padding: 0px
+    outline: none
+    background: $yellow
+    @include flex(center, center)
+    @include text-settings(16px, 700, white, $rale)
+.fb-btn
+    width: 255px
+    height: 50px

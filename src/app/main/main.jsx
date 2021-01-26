@@ -2,6 +2,7 @@ import React from 'react';
 import ResidentialComplexDescription from './rc-description/rc';
 import ResidentialComplexFlats from './rc-flats/rcFlats.jsx';
 import FeedBackContainer from './fb-container/fb.jsx';
+import VideoPlayer from './vp-container/vp.jsx';
 const Main = () => {
     return(
         <main>
@@ -15,7 +16,7 @@ const Main = () => {
                 <FeedBackContainer/>
             </section>
             <section>
-                <div className="video-player-container"></div>
+                <VideoPlayer/>
             </section>
             <section>
                 <div className="map-container"></div>
