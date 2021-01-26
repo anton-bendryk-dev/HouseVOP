@@ -1,6 +1,7 @@
 import React from 'react';
 import ResidentialComplexDescription from './rc-description/rc';
 import ResidentialComplexFlats from './rc-flats/rcFlats.jsx';
+import FeedBackContainer from './fb-container/fb.jsx';
 const Main = () => {
     return(
         <main>
@@ -11,7 +12,7 @@ const Main = () => {
                 <ResidentialComplexFlats/>
             </section>
             <section>
-                <div className="feedback-container"></div>
+                <FeedBackContainer/>
             </section>
             <section>
                 <div className="video-player-container"></div>
