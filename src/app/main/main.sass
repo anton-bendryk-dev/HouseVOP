@@ -3,3 +3,32 @@
 @import './fb-container/fb.sass'
 @import './feedback-form/ff.sass'
 @import './vp-container/vp.sass'
+.fcb
+    @include flex(initial, center)
+.feedback-container-bottom > div
+    display: grid 
+    grid-template-columns: 25% 25% 25% 25%
+    justify-content: space-around
+.feedback-container-bottom > div > div:nth-child(3)
+    order: 1
+.feedback-container-bottom > div > div:nth-child(1)
+    order: 2
+.feedback-container-bottom > div > div:nth-child(2)
+    order: 3
+.feedback-container-bottom > div > div:nth-child(4)
+    order: 4
+.map-container
+    @include flex(initial, center)
+    padding-top: 100px
+    padding-bottom: 50px
+.marker
+    width: 170px
+    @include text-settings(16px, 700, white, $rale)
+    @include flex(center, center)
+.marker span 
+    display: inline-block
+    width: 20%
+    height: 50px
+    @include bg 
+    background-image: url(../style/images/marker.png)
+    background-size: contain

@@ -21,7 +21,7 @@ const Header = () => {
                                 duration={800}>О комплексе</Link></div>
                                 <div className="col-w20">
                         <Link activeClass="active"
-                                to="section1"
+                                to="section5"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
