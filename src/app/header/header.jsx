@@ -1,16 +1,15 @@
 import React from 'react';
-import Logo from '../style/images/HouseVOP.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { Link, animateScroll as scroll } from "react-scroll";
+import LogoComponent from './logo.jsx';
 const Header = () => {
     return(
         <header>
             <div className="content-section">
                 <div className="inline-header">
-                    <div className="col-w20"><a href="/" className="logo">
-                        <img src={Logo} alt="Logo"></img>
-                        <p>ЖИЛОЙ КОМПЛЕКС</p>
-                    </a></div>
+                    <div className="col-w20">
+                        <LogoComponent/>
+                    </div>
                     <div className="col-w50 navigation-container">
                         <div className="col-w20">
                         <Link activeClass="active"
@@ -56,8 +55,8 @@ const Header = () => {
                     </ScrollAnimation>
                 </div>
                 <div className="contacts-container">
-                    <div className="address"><span></span>Наб. реки Фонтанки 10-15</div>
-                    <div className="phone"><span></span>8 (812) 123-45-67</div>
+                    <div className="address"><span></span>Капитанская улица, 2</div>
+                    <div className="phone"><span></span>+38(066)358-64-95</div>
                 </div>
             </div>
         </header>

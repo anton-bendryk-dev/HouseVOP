@@ -28,7 +28,7 @@ const Main = () => {
         </div>
       </section>
       <section className="fcb">
-        <div className="content-section">
+        <div className="content-section fc">
           <h2>Есть вопросы?</h2>
           <div className="feedback-container-bottom">
             <FeedBackForm />

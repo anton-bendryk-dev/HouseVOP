@@ -1,0 +1,24 @@
+footer 
+    background: #2D343C
+    @include flex(initial, center)
+    min-height: 260px
+.inline-footer
+    display: grid 
+    grid-template-columns: 25% 25% 25% 25%
+    justify-content: space-around
+    padding-top: 60px
+.footer-box a
+    width: 60%
+    @include text-settings(14px, 400, white, $rale)
+    padding-top: 10px
+.footer-box-menu
+    @include flex(center, center)
+    flex-direction: column
+    padding-top: 15px
+.footer-box a:hover 
+    color: #BEBEBE
+.footer-box-menu p 
+    width: 90%
+    @include text-settings(14px, 400, white, $rale)
+    padding-top: 10px
+    margin: 0

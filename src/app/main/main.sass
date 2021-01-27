@@ -5,6 +5,9 @@
 @import './vp-container/vp.sass'
 .fcb
     @include flex(initial, center)
+.fc
+    @include flex(initial, center)
+    flex-direction: column
 .feedback-container-bottom > div
     display: grid 
     grid-template-columns: 25% 25% 25% 25%
@@ -20,7 +23,6 @@
 .map-container
     @include flex(initial, center)
     padding-top: 100px
-    padding-bottom: 50px
 .marker
     width: 170px
     @include text-settings(16px, 700, white, $rale)
