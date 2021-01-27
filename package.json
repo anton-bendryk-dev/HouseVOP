@@ -1,48 +1,52 @@
 {
-  "name": "hvop",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.3",
-    "@testing-library/user-event": "^12.6.0",
-    "animate.css": "^4.1.1",
-    "google-map-react": "^2.1.9",
-    "node-sass": "^4.14.1",
-    "react": "^17.0.1",
-    "react-animate-on-scroll": "^2.1.5",
-    "react-dom": "^17.0.1",
-    "react-google-maps": "^9.4.5",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.1",
-    "react-scroll": "^1.8.1",
-    "web-vitals": "^0.2.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "devDependencies": {
-    "sass": "^1.32.4"
-  }
+    "name": "hvop",
+    "homepage": "http://gitname.github.io/hvop/",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "@testing-library/jest-dom": "^5.11.9",
+        "@testing-library/react": "^11.2.3",
+        "@testing-library/user-event": "^12.6.0",
+        "animate.css": "^4.1.1",
+        "google-map-react": "^2.1.9",
+        "node-sass": "^4.14.1",
+        "react": "^17.0.1",
+        "react-animate-on-scroll": "^2.1.5",
+        "react-dom": "^17.0.1",
+        "react-google-maps": "^9.4.5",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "4.0.1",
+        "react-scroll": "^1.8.1",
+        "web-vitals": "^0.2.4"
+    },
+    "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ]
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "devDependencies": {
+        "gh-pages": "^3.1.0",
+        "sass": "^1.32.4"
+    }
 }
