@@ -22,3 +22,8 @@ footer
     @include text-settings(14px, 400, white, $rale)
     padding-top: 10px
     margin: 0
+@media screen and (max-width: 768px)
+    .inline-footer
+        grid-template-columns: 50% 50% 
+        grid-template-rows: repeat(2, 1fr)
+        padding-bottom: 20px

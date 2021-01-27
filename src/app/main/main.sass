@@ -34,3 +34,7 @@
     @include bg 
     background-image: url(../style/images/marker.png)
     background-size: contain
+@media screen and (max-width: 768px)
+    .feedback-container-bottom > div
+        grid-template-columns: 50% 50% 
+        grid-template-rows: repeat(2, 1fr)
